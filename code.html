@@ -7,6 +7,13 @@
 </head>
 <body>
 
+    <p> 
+      use the following link to complete what you have started:
+      <a href="https://www.w3resource.com/html-css-exercise/basic/button.php">
+        finished till C character.
+      </a>
+    </p>
+
     <hr>
     <p style="text-align: center;"> links tips and tricks </p>
     <hr>
@@ -117,21 +124,28 @@
       <p style="text-align: center;"> buttons tips and tricks </p>
       <hr>  
       <!-- buttons -->
-        <button type="button" onclick="console.log('Welcome Friends')">Click Me!</button>
+          <button type="button" onclick="console.log('Welcome Friends')">Click Me!</button>
         <!-- autofocus attribute () -->
-        <button type="button" autofocus onclick="console.log('Welcome Friends')">Click Me!</button>
+          <button type="button" autofocus onclick="console.log('Welcome Friends')">Click Me!</button>
         <!-- disabled -->
-        <button type="button" name="Submit" disabled>Submit</button>
+          <button type="button" name="Submit" disabled>Submit</button>
         <!-- form submit button click -->
-        <form method="POST" 
-        action="https://www.w3resource.com/html-css-exercise/basic/solution/button-form-answer-demo.php" id="form1">
-          First   name  : <input type="text" name="fname"><br>
-          Last    name : <input type="text" name="lname"><br>
-          Present Address : <input type="text" name="add"><br>
-          E-mail  : <input type="text" name="mail"><br>
-        </form>
-        <button type="submit" form="form1" value="Submit">Submit</button>
-        <!--  -->
+          <form method="POST" action="https://www.w3resource.com/html-css-exercise/basic/solution/button-form-answer-demo.php" id="form1">
+            First   name  : <input type="text" name="fname"><br>
+            Last    name : <input type="text" name="lname"><br>
+            Present Address : <input type="text" name="add"><br>
+            E-mail  : <input type="text" name="mail"><br>
+          </form>
+          <button type="submit" form="form1" value="Submit">Submit</button>
+        <!-- name a button -->
+          <button name="topic" type="submit" value="JavaScript">JavaScript</button>
+        <!-- initial value -->
+          <button name="game" type="submit" value="cricket">cricket</button>
+        <!-- button type -->
+          <button type="submit" value="Submit">Submit</button>
+          <button type="reset" value="Reset">Reset</button>
+
+
 
 </body>
 </html>
