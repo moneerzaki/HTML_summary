@@ -1,2 +1,138 @@
-links: 
-  <a href="https://google.com"> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+    <hr>
+    <p style="text-align: center;"> links tips and tricks </p>
+    <hr>
+    <!-- links -->
+      <!-- normal link-->
+        <p><a href="https://www.w3resource.com/">w3resource.com</a></p>
+      <!-- download file-->
+        <p><a href="https://www.w3resource.com/images/w3resource-logo.png" download>Download</a></p>
+      <!-- define the language -->
+        <p><a href="https://w3resource.com" hreflang="en">w3resource Tutorial</a></p>
+      <!-- a hyperlink to another part of the same HTML document -->
+        <p><a href="#bottom">Go the bottom</a></p>
+      <!-- with a media attribute -->
+        <p><a href="https://www.w3resource.com" media="print, handheld">Media Attribute</a></p>
+      <!-- with a no follow -->
+        <p><a rel="nofollow" href="http://example.com">Example.com</a></p>
+      <!--  open link in a separate tap-->
+        <p><a href="https://w3resource.com" target="_blank">Target HTML5 TUTORIAL</a></p>
+      <!-- adding hyperlinks to images -->
+        <img src="https://www.w3resource.com/html/area/html-area-element.png" alt="area example " width="308" height="190" border="1" usemap="#Map">  
+        <map name="Map">  
+          <area shape="rect" coords="8,5,100,77" href="https://www.w3resource.com/mysql/mysql-tutorials.php" target="_blank" alt="mysql tutorial">  
+          <area shape="circle" coords="155,93,59" href="https://www.w3resource.com/php/php-home.php" target="_blank" alt="php tutorial">  
+          <area shape="rect" coords="197,136,306,188" href="https://www.w3resource.com/sql/sql-tutorials.php" alt="sql tutorials">  
+        </map>  
+      <!-- base url -->
+      <h5> base url: (non clickable) </h5>
+        <base href="https://www.w3resource.com/">  
+
+
+    <hr>
+    <p style="text-align: center;"> text tips and tricks </p>
+    <hr>
+    <!-- text -->
+      <!-- abbreviations -->
+        <h5> abbreviations : </h5>  
+        <abbr title="Uniform Resource Locator">URL</abbr> stand for Uniform Resource Locator 
+      <!--  addresses-->
+        <h5> address :</h5>
+        <address>
+          Address: 21,Ramkrishna Road<br> 
+          Burdwan<br> 
+          West Bengal.
+        </address>
+      <!-- article -->
+        <article>  
+          <h1>Tutorial of HTML5 article element</h1>  
+          <p>HTML5 article element represents independent item like a blog entry in an web document.</p>  
+        </article> 
+      <!-- aside element (side note to the topic or content) -->
+        <aside>
+          <h4>HTML5 tutorial</h4>
+          <p>I can develop excellent web applications with HTML5 and related APIs (like GeoLocation, Drag and Drop, WebSocket etc.)in HTML5 tutorial.</p>
+        </aside>
+      <!-- bold -->
+        <p>"w3resource" is normal text - and <b>"w3resource"</b> is bold text.</p>
+      <!-- bdi bi directional isolation (arabic written texts) -->
+      <h5> arabic texts: </h5>
+        <ul>
+          <li>User <bdi>hrefs</bdi>: 40 points</li>
+          <li>User <bdi>jdoe</bdi>: 60 points</li>
+          <li>User <bdi>ترحيب</bdi>:80 points this is one is bidirectional</li> 
+          <li>User ترحيب :80 points</li>
+        </ul>
+      <!-- bdo bi directional override (arabic written texts)-->
+        <p dir="rtl" >This text is in right to left direction.</p>  
+        <bdo lang="arabic" dir="rtl"> هذه الكتابة يجب ان تكون من اليمين الي اليسار</bdo>
+        <br>
+        <bdo lang="arabic"> هذه الكتابة يجب ان تكون من اليمين الي اليسار</bdo>
+      <!-- quotes -->
+        <h5> quote: </h5>
+        <blockquote>Freedom is not worth having if it does not connote freedom to err. It passes my comprehension how human beings, be they ever so experienced and able, can delight in depriving other human beings of that precious right.</blockquote>  
+        <!-- with a cite -->
+        <h5> quote with a cite: </h5>
+        <blockquote cite="https://www.w3resource.com/html/HTML-tutorials.php"><p>We have covered all the HTML 4.01 elements or tags and their attributes. Because it is HTML elements (or tags ) and attributes, which you need to understand for learning HTML.</p></blockquote>  
+
+      <!--  -->
+
+
+
+
+
+        
+
+      <hr>
+      <p style="text-align: center;"> text tips and tricks </p>
+      <hr>  
+      <!-- audio -->
+        <!-- normal audio file -->
+        <audio controls>  <!-- controls are added -->
+          <source src="https://www.w3resource.com/html-css-exercise/basic/solution/beach.ogg" type="audio/ogg">
+          <source src="https://www.w3resource.com/html-css-exercise/basic/solution/beach.mp3" type="audio/mpeg">
+        </audio>
+        <!-- autoplay audio -->
+          <audio controls="controls" autoplay> </audio>
+        <!-- repeat -->
+          <audio controls="controls" loop> </audio>
+        <!-- mute the audio -->
+          <audio controls="controls" muted> </audio>
+        <!-- preload audio -->
+          <audio controls="controls" preload="auto"> </audio>
+
+      
+      
+
+
+      <hr>
+      <p style="text-align: center;"> buttons tips and tricks </p>
+      <hr>  
+      <!-- buttons -->
+        <button type="button" onclick="console.log('Welcome Friends')">Click Me!</button>
+        <!-- autofocus attribute () -->
+        <button type="button" autofocus onclick="console.log('Welcome Friends')">Click Me!</button>
+        <!-- disabled -->
+        <button type="button" name="Submit" disabled>Submit</button>
+        <!-- form submit button click -->
+        <form method="POST" 
+        action="https://www.w3resource.com/html-css-exercise/basic/solution/button-form-answer-demo.php" id="form1">
+          First   name  : <input type="text" name="fname"><br>
+          Last    name : <input type="text" name="lname"><br>
+          Present Address : <input type="text" name="add"><br>
+          E-mail  : <input type="text" name="mail"><br>
+        </form>
+        <button type="submit" form="form1" value="Submit">Submit</button>
+        <!--  -->
+
+</body>
+</html>
+  
